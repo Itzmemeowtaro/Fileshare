@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "9ea49405d5a93e784114c469f5ce4bbd")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001998200400"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "VØAT")
+OWNER = os.environ.get("OWNER", "VOAT")
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "6564942226"))
@@ -36,7 +36,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002098705916"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-4152698104"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001814246232"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
