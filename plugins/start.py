@@ -1,8 +1,8 @@
 import os, asyncio, humanize
-from pyrofork import Client, filters, __version__
-from pyrofork.enums import ParseMode
-from pyrofork.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from pyrofork.errors import FloodWait, UserIsBlocked, InputUserDeactivated
+from pyrogram import Client, filters, __version__
+from pyrogram.enums import ParseMode
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 from bot import Bot
 from config import *
 from helper_func import subscribed, encode, decode, get_messages
