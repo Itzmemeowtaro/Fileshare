@@ -62,7 +62,8 @@ async def start_command(client: Client, message: Message):
         yugen_msgs = []  # List to keep track of sent messages
 
         for msg in messages:
-            caption = CUSTOM_CAPTION.format(previouscaption=msg.caption.html if msg.caption else msg.document.file_name)
+            caption = (CUSTOM_CAPTION.format(previouscaption=msg.caption.html if msg.caption else msg.document.file_name) if bool(CUSTOM_CAPTION) and bool(msg.document)
+                       else ("" if not msg.caption else msg.caption.html))
 
 
             reply_markup = msg.reply_markup if DISABLE_CHANNEL_BUTTON else None
