@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) #in seconds
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʏᴏᴏ {mention} ✌🏻</b> \n<blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʏᴏᴏ {mention} ✌🏻</b></blockquote> \n<blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "6321064549 2061656269").split()):
