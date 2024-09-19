@@ -28,10 +28,10 @@ OWNER = os.environ.get("OWNER", "VØAT")
 OWNER_ID = int(os.environ.get("OWNER_ID", "6321064549"))
 
 #Port
-PORT = os.environ.get("PORT", "8000")
+PORT = os.environ.get("PORT", "8040")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://lucas242158:HCXwNAkwk3DLtAkP@cluster0.taoae8u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mackenzie411685:RMo2hyASvSI8bZQ3@cluster0.jfjrm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
@@ -53,7 +53,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ʏᴏᴜ ᴇxᴘᴇᴄᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ᴡɪᴛʜᴏᴜᴛ ᴇᴠᴇɴ ᴊᴏɪɴɪɴɢ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟꜱ? 😔\nᴊᴏɪɴ ᴛʜᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟꜱ, ʟɪɴᴋᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>{filename}</b>\n<b>• ʙʏ @YugenNetwork</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>{filename}</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
