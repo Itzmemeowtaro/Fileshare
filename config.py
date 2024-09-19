@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) #in seconds
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʏᴏᴏ {mention} ✌🏻</b>\n<blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ʏᴏᴏ {mention} ✌🏻</b> \n<blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "6321064549 2061656269").split()):
@@ -55,7 +55,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<blockquote><b>ʏᴏᴜ ᴇxᴘᴇᴄᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ᴡɪᴛʜᴏᴜᴛ ᴇᴠᴇɴ ᴊᴏɪɴɪɴɢ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟꜱ? 😔\nᴊᴏɪɴ ᴛʜᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟꜱ, ʟɪɴᴋᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ</b></blockquote>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote><b>{filename}</b></blockquote>\n<blockquote>By : @Anime_Tomb\nNetwork : @YugenNetwork</blockquote>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote><b>{filename}</b></blockquote> \n<blockquote>By : @Anime_Tomb\nNetwork : @YugenNetwork</blockquote>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
@@ -84,7 +84,7 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("pyrofork").setLevel(logging.WARNING)
 
 
 def LOGGER(name: str) -> logging.Logger:
