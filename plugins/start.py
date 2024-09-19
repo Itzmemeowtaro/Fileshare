@@ -82,7 +82,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b>")
+                                      text=f"<blockquote><b><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b></blockquote>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(yugen_msgs, client, k))
@@ -164,7 +164,7 @@ async def send_text(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
         
-        pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
+        pls_wait = await message.reply("<blockquote><i>Broadcasting Message.. This will Take Some Time</i></blockquote>")
         for chat_id in query:
             try:
                 await broadcast_msg.copy(chat_id)
@@ -185,13 +185,12 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u></b>
-
-<b>Total Users :</b> <code>{total}</code>
+        status = f"""<blockquote><b><u>Broadcast Completed</u></b></blockquote>
+<blockquote expandable><b>Total Users :</b> <code>{total}</code>
 <b>Successful :</b> <code>{successful}</code>
 <b>Blocked Users :</b> <code>{blocked}</code>
 <b>Deleted Accounts :</b> <code>{deleted}</code>
-<b>Unsuccessful :</b> <code>{unsuccessful}</code>"""
+<b>Unsuccessful :</b> <code>{unsuccessful}</code><blockquote>"""
         
         return await pls_wait.edit(status)
 
@@ -224,4 +223,4 @@ async def delete_files(messages, client, k):
         keyboard = None
 
     # Edit message with the button
-    await k.edit_text("<b><i>Your Video / File Is Successfully Deleted ✅</i></b>", reply_markup=keyboard)
+    await k.edit_text("<blockquote><b><i>Your Video / File Is Successfully Deleted ✅</i></b></blockquote>", reply_markup=keyboard)
