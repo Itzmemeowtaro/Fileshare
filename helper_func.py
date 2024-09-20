@@ -7,7 +7,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from config import AUTH_CHANNEL, ADMINS
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
-from pyrogram.errors import FloodWait
+from pyrogram.errors import *
 
 async def is_subscribed(filter, client, update):
     if not AUTH_CHANNEL:
