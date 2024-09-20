@@ -4,10 +4,13 @@
 
 
 import os
+import re
+from os import environ
 import logging
 from logging.handlers import RotatingFileHandler
 
-
+id_pattern = re.compile(r'^.\d+$')
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002195629647 -1002257627668').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7533155506:AAHNMziIm1-074JpPYceXSu07tPc21o3bxE")
@@ -35,8 +38,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mackenzie411685:RMo2hyASv
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002195629647"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002257627668"))
+#FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002195629647"))
+#FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002257627668"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
