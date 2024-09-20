@@ -38,7 +38,18 @@ async def start_command(client: Client, message: Message):
                     btn.append([InlineKeyboardButton("ʀᴇʟᴏᴀᴅ", url=f"https://t.me/{username}?start={message.command[1]}")])
                 else:
                     btn.append([InlineKeyboardButton("ʀᴇʟᴏᴀᴅ", url=f"https://t.me/{username}?start=true")])
-                await message.reply_text(text=f"<blockquote><b>👋 Hello {message.from_user.mention},\n\nPlease join the channel then click on try again button. 😇</b></blockquote>", reply_markup=InlineKeyboardMarkup(btn))
+                await message.reply(
+                       text=FORCE_MSG.format(
+                       first=message.from_user.first_name,
+                       last=message.from_user.last_name,
+                       username=None if not message.from_user.username else '@' + message.from_user.username,
+                       mention=message.from_user.mention,
+                       id=message.from_user.id
+                   ),
+                   reply_markup=InlineKeyboardMarkup(btn),
+                   quote=True,
+                   disable_web_page_preview=True
+               )
                 return
         except Exception as e:
             print(e)
