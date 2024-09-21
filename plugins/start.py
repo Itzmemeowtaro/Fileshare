@@ -142,7 +142,7 @@ async def start_command(client: Client, message: Message):
         )
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="https://envs.sh/0Qb.jpg",
+            photo="https://envs.sh/0Qb.png",
             caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
