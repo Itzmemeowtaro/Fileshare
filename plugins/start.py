@@ -132,7 +132,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⛩️ ʏᴜɢᴇɴ', url='https://t.me/YugenNetwork')
+                    InlineKeyboardButton('⛩️ ʏᴜɢᴇɴ ⛩️', url='https://t.me/YugenNetwork')
                 ],
                 [
                    InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"),
@@ -142,7 +142,7 @@ async def start_command(client: Client, message: Message):
         )
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="https://envs.sh/qum.jpg",
+            photo="https://envs.sh/0Qb.jpg",
             caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
