@@ -14,7 +14,7 @@ yugenbots = FILE_AUTO_DELETE
 voat = yugenbots
 file_auto_delete = humanize.naturaldelta(voat)
 
-async def not_joined(bot, query, channel):
+async def is_subscribed(bot, query, channel):
     btn = []
     for id in channel:
         chat = await bot.get_chat(int(id))
@@ -31,7 +31,7 @@ async def start_command(client: Client, message: Message):
 
     if AUTH_CHANNEL:
         try:
-            btn = await not_joined(client, message, AUTH_CHANNEL)
+            btn = await is_subscribed(client, message, AUTH_CHANNEL)
             if btn:
                 username = (await client.get_me()).username
                 if message.command[1]:
@@ -154,7 +154,7 @@ async def start_command(client: Client, message: Message):
         )
         return
         
-"""
+
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
@@ -187,7 +187,7 @@ async def not_joined(client: Client, message: Message):
         quote=True,
         disable_web_page_preview=True
     )
-"""
+
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
