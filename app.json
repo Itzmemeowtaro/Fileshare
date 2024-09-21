@@ -45,6 +45,10 @@
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
       "value": "-1001495022147"
     },
+    "FORCE_SUB_CHANNEL3":{
+      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "value": "-1001495022047"
+    },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
       "value": "5115691197 6273945163 6103092779 5231212075",
