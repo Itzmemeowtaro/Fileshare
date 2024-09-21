@@ -140,7 +140,7 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
-        await message.send_photo(
+        await client.send_photo(
             chat_id=message.chat.id,
             photo="https://envs.sh/qum.jpg",
             caption=START_MSG.format(
@@ -149,8 +149,7 @@ async def start_command(client: Client, message: Message):
                 username=None if not message.from_user.username else '@' + message.from_user.username,
                 mention=message.from_user.mention,
                 id=message.from_user.id
-            ),
-            reply_markup = reply_markup
+            )
         )
         return
         
