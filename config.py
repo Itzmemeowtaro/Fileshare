@@ -28,7 +28,7 @@ OWNER = os.environ.get("OWNER", "VØAT")
 OWNER_ID = int(os.environ.get("OWNER_ID", "6321064549"))
 
 #Port
-PORT = os.environ.get("PORT", "8040")
+PORT = os.environ.get("PORT", "8010")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mackenzie411685:RMo2hyASvSI8bZQ3@cluster0.jfjrm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) #in seconds
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "start")
+START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʏᴏᴏ {mention} ✌🏻</b></blockquote> <blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "6321064549 2061656269").split()):
@@ -52,10 +52,10 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "fsub")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<blockquote><b>ʏᴏᴜ ᴇxᴘᴇᴄᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ᴡɪᴛʜᴏᴜᴛ ᴇᴠᴇɴ ᴊᴏɪɴɪɴɢ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟꜱ? 😔\nᴊᴏɪɴ ᴛʜᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟꜱ, ʟɪɴᴋᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ</b></blockquote>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "{previouscaption}")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote><b>{previouscaption}</blockquote> <blockquote>◦ ʙʏ ⌯ @Anime_Tomb\n◦ ɴᴇᴛᴡᴏʀᴋ ⌯ @YugenNetwork</b></blockquote>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
