@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
         )
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="plugins/image/start.png",
+            photo="plugins/image/start.jpg",
             caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
@@ -136,7 +136,7 @@ async def not_joined(client: Client, message: Message):
 
     await client.send_photo(
             chat_id=message.chat.id,
-            photo="plugins/image/start.png",
+            photo="plugins/image/start.jpg",
             caption=FORCE_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
