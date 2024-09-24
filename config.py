@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7533155506:AAHX1Ycs7cy7AYdp0eZrcrLQFkzuYTzE3zw")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6901130748:AAGkGhBdI4VIgbh5b22eUMKY7Y_0cjlUh7w")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26634100"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "26634100"))
 API_HASH = os.environ.get("API_HASH", "9ea49405d5a93e784114c469f5ce4bbd")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002265570218"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002172971037"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "VØAT")
@@ -35,8 +35,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://zoey611870:5ErfLUWPKH44hk
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002195629647"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002303944861"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001923586928"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001593947578"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -55,7 +55,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<blockquote><b>ʏᴏᴜ ᴇxᴘᴇᴄᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ᴡɪᴛʜᴏᴜᴛ ᴇᴠᴇɴ ᴊᴏɪɴɪɴɢ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟꜱ? 😔\nᴊᴏɪɴ ᴛʜᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟꜱ, ʟɪɴᴋᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ</b></blockquote>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote expandable><b>{previouscaption} \n \n◦ ʙʏ ⌯ @Anime_Tomb \n \n◦ ɴᴇᴛᴡᴏʀᴋ ⌯ @YugenNetwork</b></blockquote>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote expandable><b>{previouscaption} \n \n◦ ʙʏ ⌯ @Anime_Yugen \n \n◦ ɴᴇᴛᴡᴏʀᴋ ⌯ @YugenNetwork</b></blockquote>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
