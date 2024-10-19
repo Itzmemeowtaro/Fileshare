@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<blockquote expandable><b>┏━━━━━━━⛩️━━━━━━━┓\n× ɢᴏᴅ : <a href='tg://user?id={OWNER_ID}'>🫨 🫨</a>\n× ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : @Anime_Yugen\n× ᴍᴀɴɢᴀ ᴄʜᴀɴɴᴇʟ : @Manga_Yugen\n× ʏᴜɢᴇɴ ɴᴇᴛᴡᴏᴋ : @YugenNetwork\n┗━━━━━━━⛩️━━━━━━━┛</b></blockquote>",
+            text = f"<blockquote expandable><b>┏━━━━━━━⛩️━━━━━━━┓\n× ɢᴏᴅ : <a href='tg://user?id={OWNER_ID}'>🫨 🫨</a>\n┗━━━━━━━⛩️━━━━━━━┛</b></blockquote>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
@@ -28,10 +28,3 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             pass
 
 
-#⋗  ᴛᴇʟᴇɢʀᴀᴍ - @Codeflix_bots
-
-#- ᴄʀᴇᴅɪᴛ - Github - @Codeflix-bots , @erotixe
-#- ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ ʀᴇᴍᴏᴠᴇ ᴄʀᴇᴅɪᴛ..
-#- ᴛʜᴀɴᴋ ʏᴏᴜ ᴄᴏᴅᴇғʟɪx ʙᴏᴛs ғᴏʀ ʜᴇʟᴘɪɴɢ ᴜs ɪɴ ᴛʜɪs ᴊᴏᴜʀɴᴇʏ 
-#- ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ɢɪᴠɪɴɢ ᴍᴇ ᴄʀᴇᴅɪᴛ @Codeflix-bots  
-#- ғᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ -> ᴛᴇʟᴇɢʀᴀᴍ @codeflix_bots Community @Otakflix_Network </b>
