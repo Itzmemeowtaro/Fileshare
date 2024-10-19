@@ -2,7 +2,7 @@
 
 from aiohttp import web
 from plugins import web_server
-from pyrograms.errors import *
+from pyrogram.errors import *
 import pyromod.listen
 from pyrogram import Client
 from pyrogram.enums import ParseMode
