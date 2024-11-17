@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "bd08752ff079fbe5f4f8497868b9a40e")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002477497384"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "VØAT")
+OWNER = os.environ.get("OWNER", "Touka Sama")
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "7390296183"))
@@ -41,7 +41,7 @@ FSC3 = int(os.environ.get("FSC3", "-1002217536001"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "3600")) #in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1000")) #in seconds
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>ʏᴏᴏ {mention} ✌🏻</b></blockquote> <blockquote>ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟɪɴᴋꜱ ᴘʀᴏᴠɪᴅᴇᴅ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ</blockquote>")
@@ -56,7 +56,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<blockquote><b>ʏᴏᴜ ᴇxᴘᴇᴄᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ, ᴡɪᴛʜᴏᴜᴛ ᴇᴠᴇɴ ᴊᴏɪɴɪɴɢ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟꜱ? 😔\nᴊᴏɪɴ ᴛʜᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟꜱ, ʟɪɴᴋᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ</b></blockquote>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote expandable><b>{previouscaption} \n \n◦ ʙʏ ⌯ @Anime_Yugen \n \n◦ ɴᴇᴛᴡᴏʀᴋ ⌯ @YugenNetwork</b></blockquote>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote expandable><b>{previouscaption} \n \n◦ ʙʏ ⌯ @Animes_Sovereign \n \n◦ Main ⌯ @Anime_In_Hindi_Low_mb</b></blockquote>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
