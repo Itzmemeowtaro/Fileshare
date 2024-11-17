@@ -92,7 +92,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⛩️ ʏᴜɢᴇɴ ⛩️', url='https://t.me/YugenNetwork')
+                    InlineKeyboardButton('⛩️ पुनर्जन्म वाले सम्राट ⛩️', url='https://t.me/Reincarnated_Monarchs')
                 ],
                 [
                    InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"),
